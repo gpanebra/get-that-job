@@ -7,7 +7,7 @@ Get that job is a Sinatra application.
 Sinatra is a library to create web applications with Ruby. We'll learn
 more about it during the next module.
 
-What you need to know now is tat, sinatra is configured to convert any `.erb` 
+What you need to know now is tat, sinatra is configured to convert any `.erb`
 file that you add to the `views` folder into page of the application
 
 ### ERB
@@ -35,9 +35,15 @@ of the file will be displayed when you go to [/jobs](http://localhost:4567/jobs)
 
 [Explaining Video](https://share.getcloudapp.com/WnuNBWZg)
 
-### Starting the application
+### Installation
+
+To install the application dependencies, run `bundle install`. If bundle is not updated it will prompt you to run `bundle update --bundler`, if so, run that command and then rerun `bundle install`
+
+### Running the app
 
 You can start the app with `ruby app.rb`
+
+You can see the app if you go to http://localhost:4567/
 
 ### Adding assets
 
