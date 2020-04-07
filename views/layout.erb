@@ -7,11 +7,19 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="stylesheets/gerard_altamirano.css" />
+    <link rel="stylesheet" href="stylesheets/freddy_munive.css" />
+    <link rel="stylesheet" href="stylesheets/gustavo_panebra.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
 
 <!-- This will be on all pages -->
-<%= erb :navbar %>
-
+<%= erb :"../components/navbar" %>
 <%= yield %>
+<%= erb :"../components/footer" %>
 </body>
