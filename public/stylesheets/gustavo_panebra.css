@@ -1,3 +1,5 @@
+/*Testimonials*/
+
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-.testimonials .testimonials-text h2 {
+.testimonials-text h2 {
   font-family: Overpass;
   font-style: normal;
   font-weight: bold;
@@ -24,7 +26,7 @@
   letter-spacing: -1px;
   color: #000000;
 }
-.testimonials .testimonials-text h5 {
+.testimonials-text h5 {
   font-family: Overpass;
   font-style: normal;
   font-weight: 300;
@@ -33,7 +35,7 @@
   text-align: center;
   color: #000000;
 }
-.testimonials .testimonials-text h6 {
+.testimonials-text h6 {
   font-family: Overpass;
   font-style: normal;
   font-weight: 300;
@@ -41,4 +43,127 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+}
+
+/*Get in touch*/
+
+.get_in_touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.get_in_touch-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 1021px;
+  height: 381px;
+}
+.get_in_touch-contacts-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.get_in_touch-contacts-text h2 {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.08333px;
+  text-transform: uppercase;
+  color: #999999;
+}
+.get_in_touch-contacts-text h1 {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -1.5px;
+  color: #000000;
+}
+.get_in_touch-contacts-text h3 {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.get_in_touch-contacts-text-email_dir h6 {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.get_in_touch-contacts-form-input {
+  background: #ffffff;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 20px;
+
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+.get_in_touch-contacts-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#get_in_touch-contacts-form-message {
+  width: 495.27px;
+  height: 150px;
+  background: #ffffff;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-top: 15px;
+
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+.get_in_touch-contacts-form-submit {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  background: #000000;
+  border-radius: 6px;
+  border-color: black;
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  width: 197.04px;
+  height: 60px;
+}
+.get_in_touch-contacts-form-submit .fa-envelope {
+  font-size: 17px;
+  margin-top: -5px;
 }
