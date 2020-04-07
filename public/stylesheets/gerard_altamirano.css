@@ -29,6 +29,11 @@ header {
   margin-left: 3%;
 }
 
+.signup-link {
+  border: 2px solid #3C2DFF;
+  color: #3C2DFF !important;
+}
+
 /* NAVBAR FINISH */
 
 
