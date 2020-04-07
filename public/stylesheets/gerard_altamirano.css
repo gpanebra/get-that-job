@@ -29,10 +29,6 @@ header {
   margin-left: 3%;
 }
 
-.signup-link {
-  color: #3C2DFF;
-  border-color: #3C2DFF;
-}
 /* NAVBAR FINISH */
 
 
@@ -40,7 +36,7 @@ header {
 .form-group {
   display: flex;
   flex-flow: column;
-  margin: 10% 0;
+  margin: 4% 0;
   color: #262626;
 }
 
@@ -62,7 +58,7 @@ header {
 /* GENERAL FORMS FINISH*/
 
 /* LOGIN AND REGISTER BEGIN */
-.login, .signup {
+.login, .signup, .pwd {
   display: flex;
   flex-flow: column;
   justify-content: start;
@@ -71,7 +67,7 @@ header {
   min-height: 400px;
   height: 100vh;
 }
-.login h1, .signup h1{
+.login h1, .signup h1, .pwd h1{
   text-align: center;
 }
 
@@ -135,13 +131,13 @@ footer {
   /* NAVBAR FINISH*/
 
   /* LOGIN BEGIN */
-  .login, .signup {
+  .login, .signup, .pwd {
       display: flex;
       align-items: center;
       padding: 5% 0% 0% 0%;
   }
 
-  .login-form, .signup-form {
+  .login-form, .signup-form, .pwd-form {
       width: 20%;
   }
   /* LOGIN FINISH */
