@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="stylesheets/main.css" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="stylesheet" href="stylesheets/gerard_altamirano.css" />
     <link rel="stylesheet" href="stylesheets/freddy_munive.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-     <%= erb :navbar %>
-     <%= yield %> 
-     <%= erb :footer %>
-  </body>
-</html>
+    <link rel="stylesheet" href="stylesheets/gustavo_panebra.css" />    
+</head>
+<body>
+<!-- This will be on all pages -->
+<%= erb :"../components/header" %>
+<%= yield %>
+<%= erb :"../components/footer" %>
+</body>
