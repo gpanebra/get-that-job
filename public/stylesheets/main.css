@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;

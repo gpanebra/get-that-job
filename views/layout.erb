@@ -7,14 +7,15 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="stylesheets/freddy_munive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- This will be on all pages -->
-    <div class="container">
-      <h1 class="color">hola amigos</h1>
-    </div>
-    <%= erb :navbar %> 
-    <%= yield %>
-    <%= erb :"../components/hero" %> 
+    <!-- <%= erb :navbar %>
+     <%= yield %> -->
+    <%= erb :"../components/hero" %>
   </body>
 </html>
