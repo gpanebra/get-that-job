@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin-top: 88px;
+  padding-top: 88px;
+  background-color: #ffffff;
 }
 .testimonials-text {
   display: flex;
@@ -52,6 +53,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  background-color: #f7fafc;
+  padding: 100px;
 }
 
 .get_in_touch-contacts {
@@ -112,8 +115,8 @@
   box-sizing: border-box;
   border-radius: 6px;
   height: 60px;
+  width: 495.27px;
   padding-left: 20px;
-
   font-family: Overpass;
   font-style: normal;
   font-weight: 300;
@@ -166,4 +169,123 @@
 .get_in_touch-contacts-form-submit .fa-envelope {
   font-size: 17px;
   margin-top: -5px;
+}
+
+/*Job Detail Description*/
+.job_detail {
+  background-color: #f7fafc;
+  padding: 30px;
+}
+.job_detail-container {
+  display: flex;
+  margin: auto;
+  max-width: 1023px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.job_detail-text {
+  max-width: 650px;
+}
+.job_detail-text-return {
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+}
+.job_detail-text-return .fa-arrow-left {
+  color: #3c2dff;
+}
+.job_detail-text-return h4 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c2dff;
+  margin-left: 11px;
+}
+
+.job_detail-text-tags a {
+  text-decoration-line: none;
+  background: #3c2dff;
+  border: 1px solid #3c2dff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.job_detail-text li {
+  margin-left: 16px;
+}
+.job_detail-text h3 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.job_detail-text h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+}
+.job_detail-text h2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+  margin-top: 21px;
+}
+
+.job_detail-text p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.job_detail-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.job_detail-text-bottom-button {
+  background: #3c2dff;
+  color: #ffffff;
+  text-decoration-line: none;
+  height: 40px;
+  width: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.job_detail-text-bottom-social {
+  display: flex;
+  align-self: center;
+}
+.job_detail-text-bottom-social p {
+  margin-right: 4.75px;
+}
+.job_detail-text-bottom-social-logos {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.job_detail-text-bottom-social-logos i {
+  margin-left: 9.25px;
+  color: #262626;
 }
