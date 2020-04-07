@@ -1,13 +1,26 @@
-
-<header class="container">
-  <div class="nav-brand">
-    <img src="/img/Logo.png" alt="" class="nav-logo">
+<header class="">
+  <div class="nav-container container">
+    <div class="nav-brand">
+    <a href="/">
+      <img src="/img/Logo.png" alt="" class="nav-logo">
+    </a>
   </div>
-  <nav class="nav">
+    <button class="button" id="menu">Menu</button>
+    <nav class="nav regular-nav">
+      <a href="#" class="nav-link">Help</a>
+      <a href="#" class="nav-link">Companies</a>
+      <a href="/jobs" class="nav-link">Jobs</a>
+      <a href="/login" class="signin-link nav-link">sig in</a>
+      <a href="/register" class="signup-link nav-link">create an account</a>
+    </nav>
+  </div>
+  <nav class="responsive-nav nav">
+    <span id="close-menu">&times;</span>
     <a href="#" class="nav-link">Help</a>
     <a href="#" class="nav-link">Companies</a>
     <a href="/jobs" class="nav-link">Jobs</a>
     <a href="/login" class="signin-link nav-link">sig in</a>
     <a href="/register" class="signup-link nav-link">create an account</a>
-  </nav>
+    <a href="/login" class="signin-link nav-link">sig in</a>
+</nav>
 </header>
