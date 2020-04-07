@@ -6,6 +6,7 @@ header {
     max-width: 1440px;
     height: 100px;
     max-height: 200px;
+    transition: 500ms;
 }
 
 .nav {
@@ -38,6 +39,10 @@ header {
 /* NAVBAR FINISH */
 
 /* FOOTER BEGIN */
+footer {
+    transition: 500ms;
+}
+
 .footer-content {
     padding: 5% 0;
     display: flex;
@@ -61,6 +66,14 @@ header {
     margin-top: 5%;
     color: #7A7A7A;
 }
+.footer-item a {
+    text-decoration: none;
+    color:  #7A7A7A;
+}
+
+.footer-highlighted a{
+    color: #AD00FF ;
+}
 
 .footer-copy {
     display: flex;
@@ -81,10 +94,18 @@ header {
     /* FOOTER BEGIN*/
     .footer-content {
         flex-flow: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .footer-list {
+        text-align: center;
         margin: 5% 0;
+    }
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .footer-item {
+        font-size: 20px;
     }
 
     /* FOOTER FINISH*/
