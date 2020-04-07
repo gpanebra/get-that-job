@@ -72,10 +72,14 @@
 
 .job-positions {
   display: grid;
-  grid-template-rows: 82px;
+  grid-template-rows: repeat(3, 82px);
   row-gap: 1em;
   width: 100%;
   justify-self: end;
+}
+
+.job-description {
+  text-align: center;
 }
 
 .card-position {
@@ -83,7 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .card-description,
@@ -92,16 +96,24 @@
 }
 
 .card-logo {
-  margin-right: 15px;
+  margin-right: 10px;
+  align-self: center;
+  line-height: 42px;
+}
+
+.card-logo img {
+  vertical-align: middle;
 }
 
 .card-title {
-  margin-right: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-job {
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 17px;
+  line-height: 15px;
 }
 
 .card-job a {
@@ -109,21 +121,27 @@
   text-decoration: none;
 }
 
+.card-actions {
+  display: flex;
+  align-items: center;
+}
+
 .card-address {
   color: #000000;
   font-size: 14px;
   line-height: 19px;
   font-weight: bold;
-  display: flex;
+  /* display: flex; */
   /* margin-right: 17px; */
 }
 
 .card-address img {
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .card-dollar {
-  margin-right: 17px;
+  margin-right: 5px;
 }
 
 .card-tecno {
@@ -131,7 +149,7 @@
   padding: 2px 5px;
   font-size: 12px;
   font-weight: bold;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 .card-date {
@@ -151,13 +169,13 @@
   }
 
   .hero-image img {
-    width: auto;
+    width: 100%;
   }
 
   .title {
     font-size: 46px;
-    line-height: 63px;
-    padding-top: 100px;
+    line-height: 43px;
+    padding-top: 50px;
   }
 
   .description {
@@ -172,7 +190,16 @@
   }
 
   .job-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
+  }
+
+  .job-positions {
+    align-self: center;
+  }
+
+  .job-description {
+    width: 95%;
+    text-align: left;
   }
 
   .subtitle {
@@ -180,12 +207,38 @@
     line-height: 49px;
     font-weight: bold;
   }
+}
 
-  .job-positions {
-    display: grid;
-    grid-template-rows: 82px;
-    row-gap: 1em;
-    width: 85%;
-    justify-self: end;
+@media (min-width: 992px) {
+  .title {
+    padding-top: 100px;
+    line-height: 43px;
+  }
+
+  /* job */
+  .card-position {
+    padding: 0 20px;
+  }
+  .card-job {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .card-logo {
+    margin-right: 15px;
+  }
+
+  .card-dollar {
+    margin-right: 17px;
+  }
+
+  .card-tecno {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .job-list {
+    grid-template-columns: 1fr 1fr;
   }
 }
