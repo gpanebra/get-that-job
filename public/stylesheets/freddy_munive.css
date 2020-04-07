@@ -147,6 +147,7 @@
 .card-tecno {
   background: rgba(60, 45, 255, 0.69);
   padding: 2px 5px;
+  color: #fff;
   font-size: 12px;
   font-weight: bold;
   margin-right: 5px;
@@ -156,6 +157,43 @@
   color: #718096;
   font-size: 14px;
   line-height: 19px;
+}
+
+/* jobs-listing */
+
+.job-listing-section {
+  display: grid;
+  row-gap: 1em;
+}
+
+.job-listing-section .card-position {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  padding: 15px;
+}
+
+.job-listing-section .card-position:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.06);
+}
+
+.container-tecno {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-tecno .card-tecno:first-child {
+  margin-top: 0;
+}
+
+.container-tecno .card-tecno {
+  margin-top: 5px;
+}
+
+.card-new {
+  background-color: #ff0d0d;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 1px 3px;
 }
 
 @media (min-width: 768px) {
@@ -207,6 +245,16 @@
     line-height: 49px;
     font-weight: bold;
   }
+
+  /* job list */
+
+  .container-tecno {
+    flex-direction: row;
+  }
+
+  .container-tecno .card-tecno {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -222,6 +270,14 @@
   .card-job {
     font-size: 20px;
     line-height: 27px;
+  }
+
+  .card-job a {
+    transition: color 0.1s ease;
+  }
+
+  .card-job a:hover {
+    color: #3c2dff;
   }
 
   .card-logo {
