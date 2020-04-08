@@ -7,6 +7,11 @@
 }
 
 @media (min-width: 992px) {
+
+  .responsive-nav {
+    visibility: hidden !important;
+  }
+
   .regular-nav {
     display: block;
   }
