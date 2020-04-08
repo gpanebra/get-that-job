@@ -186,6 +186,10 @@
   padding: 1px 3px;
 }
 
+.container-button {
+  margin: 20px 0;
+}
+
 /* job_filter_list */
 
 .filters {
@@ -198,8 +202,18 @@
   row-gap: 1em;
 }
 
+.common-filters {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.search {
+  grid-column: 1 / 3;
+}
+
 .filters input,
-.filters select {
+.filters li,
+.country-header {
   font-family: "Nunito", sans-serif;
   border: 0;
   background-color: #fff;
@@ -207,10 +221,8 @@
   color: #4a5568;
 }
 
-.filters select {
+.filters li {
   cursor: pointer;
-  outline: none;
-  padding-right: 20px;
 }
 
 .common-filters > div {
@@ -224,13 +236,18 @@
 .type,
 .salary,
 .more {
-  padding: 10px 8px;
+  padding: 10px 0;
   text-align: right;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
 }
 
 .recommended {
   text-align: right;
-  padding: 10px 8px;
+  /* padding: 10px 8px; */
 }
 
 .search {
@@ -253,7 +270,7 @@
   padding: 2px;
   min-width: 90%;
   outline: none;
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .country,
@@ -264,19 +281,112 @@
   position: relative;
 }
 
-.arrow-down-select {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 8px;
+.country-header {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
 }
 
-/* .country img {
+.country-list {
+  display: none;
+  margin-top: 16px;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  background: #fff;
+  width: 100%;
+}
+
+.country-item-header {
+  position: relative;
+  text-align: left;
+  transition: display 0.1s ease-in;
+}
+
+.country-item-header::before {
+  content: "";
+  background: transparent;
+  position: absolute;
+  bottom: -16px;
+  display: block;
+  width: 100%;
+  height: 16px;
+  z-index: 0;
+}
+
+.country-item-header::before:hover .country-list {
+  display: block;
+}
+
+.country-item-header:hover .arrow-down-select {
+  display: none;
+}
+
+.country-item-header:hover .arrow-up-select {
+  display: inline;
+}
+
+.country-item-header:hover .country-list {
+  display: block;
+  animation: listdown 0.2s ease-in;
+}
+
+.country-list {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0 15px;
+}
+
+.country-list li {
+  padding: 5px 0;
+}
+
+@keyframes listdown {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.country-list li:hover {
+  font-weight: bold;
+}
+
+.country-container-title {
+  display: flex;
+  position: relative;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.country-container-title a {
+  text-decoration: none;
+  color: #4a5568;
+  padding-right: 40px;
+}
+
+.arrow-down-select {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.arrow-up-select {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 8px;
-} */
+
+  right: 0;
+}
 
 @media (min-width: 768px) {
   .hero {
@@ -349,12 +459,13 @@
   .filters,
   .common-filters {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .filters {
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .filters select {
