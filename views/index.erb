@@ -1,4 +1,25 @@
 <%= erb :"../components/hero" %>
-<%= erb :"../components/job_list_description" %>
+
+<section class="bg-job-list">
+  <div class="container job-list">
+    <div class="job-description">
+      <h2 class="subtitle">Find your next tech job</h2>
+      <p class="description">
+        Our Machine learning algorithm is so good that it’s even illegal in some
+        countries. Join us to use our barelly legal algorithm that is actually a
+        group of interns that work on our basement. We have a job for you, no
+        matter your background or previous experience. Is sending random memes
+        through chat your only skill? That’s ok, we got you, our Rock Star Meme
+        Curator role is here for you.
+      </p>
+    </div>
+    <div class="job-positions">
+        <% (0..2).each { |i| %>
+            <%= erb :"../components/job_item_1" %>
+        <% } %>
+    </div>
+  </div>
+</section>
+
 <%= erb :"../components/testimonials" %>
 <%= erb :"../components/get_in_touch" %>
