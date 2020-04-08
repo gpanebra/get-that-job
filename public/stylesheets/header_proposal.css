@@ -56,5 +56,8 @@
     color: #fff;
   }
 
+  .footer-content {
+    justify-content: center;
+  }
   
 }

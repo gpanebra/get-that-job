@@ -29,7 +29,6 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  /* background: rgb(255, 255, 255); */
   background: #F7FAFC;
   transition: 200ms ease all;
   z-index: 1;
@@ -59,6 +58,7 @@ header {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  margin: 10px 0;
   width: 200px;
 }
 
@@ -125,10 +125,10 @@ header {
   display: flex;
   flex-flow: column;
   justify-content: start;
-  padding: 30% 5% 0% 5%;
+  padding: 15vh 5% 0% 5%;
   background: #E5E5E5;
   min-height: 400px;
-  height: 100vh;
+  height: auto;
 }
 
 
@@ -180,29 +180,36 @@ header {
 
 /* FOOTER BEGIN */
 footer {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr .3fr;
   transition: 500ms;
   max-height: 500px;
 }
 
 .footer-content {
-  flex-flow: column;
-  align-items: center;
+  display: grid;
+  grid-template-areas:
+  "list list"
+  "list list"
+  "copy copy";
+  gap: 1em;
 }
 
 .footer-list {
+  display: flex;
+  flex-flow: column;
+  align-self: start;
   list-style: none;
-  text-align: center;
-  margin: 5% 0;
 }
 
 .footer-title {
   color: #000;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 50px;
 }
 
 .footer-item {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .footer-item {
@@ -220,6 +227,7 @@ footer {
 }
 
 .footer-copy {
+  grid: copy;
   display: flex;
   justify-content: center;
   color: #73738D;
@@ -347,6 +355,7 @@ footer {
     flex-flow: row;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 2em;
   }
 
   .footer-list {
