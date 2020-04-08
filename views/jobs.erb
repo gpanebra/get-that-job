@@ -1,2 +1,9 @@
 <%= erb :"../components/job_list_filter" %>
-<%= erb :"../components/job_listing_section" %>
+<div class="container job-listing-section">
+    <% (0..7).each { |i| %>
+        <%= erb :"../components/job_item_2" %>
+    <% } %>
+  <div class="text-center container-button">
+    <a class="button" href="">load more</a>
+  </div>
+</div>
