@@ -1,17 +1,10 @@
 let active = false;
 
 window.addEventListener("load", () => {
-  // Obtenemos el tamanio de la pantalla al momento de cargar la pa'gina
-  let height = screen.availHeight;
-  let width = screen.availWidth;
-
   // Obtenemos los elmentos necesarios
   let $btnMenu = document.querySelector("#menu");
   let $closeMenu = document.querySelector("#close-menu");
   let nav = document.querySelector(".responsive-nav");
-  // Usamos las medidas que obtuvimos para darle un tamanio al nav
-  nav.style.width = `${width}px`;
-  nav.style.height = `${height}px`;
 
   // Un simple toggle
   $btnMenu.addEventListener("click", () => {
