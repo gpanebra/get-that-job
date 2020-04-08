@@ -311,6 +311,10 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+.job_detail-text-tags a:hover {
+  background-color: white;
+  color: #3c2dff;
+}
 .job_detail-text li {
   margin-left: 16px;
 }
@@ -357,6 +361,7 @@
 }
 .get_this-button {
   background: #3c2dff;
+  border: 1px solid #3c2dff;
   color: #ffffff;
   text-decoration-line: none;
   height: 40px;
@@ -365,6 +370,11 @@
   align-items: center;
   justify-content: center;
 }
+.get_this-button:hover {
+  background-color: white;
+  color: #3c2dff;
+}
+
 .job_detail-text-bottom-social {
   display: flex;
   align-self: center;
@@ -380,6 +390,16 @@
 .job_detail-text-bottom-social-logos i {
   margin-left: 9.25px;
   color: #262626;
+}
+
+@media only screen and (max-width: 768px) {
+  .job_detail-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .company_info_card {
+    margin-top: 50px;
+  }
 }
 
 /*Company info card*/
