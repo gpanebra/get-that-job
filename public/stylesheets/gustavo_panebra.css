@@ -63,17 +63,8 @@
 
 /*Mobile*/
 @media only screen and (max-width: 768px) {
-  testimonials .testimonials-text h2 {
-    font-size: 25px;
-  }
-  .testimonials-arrow_right {
-    margin-top: 70px;
-    margin-right: 0px;
-  }
-  .testimonials-arrow_left {
-    margin-top: 70px;
-    margin-left: 0px;
-    transform: rotate(180deg);
+  .testimonials-text h2 {
+    font-size: 30px;
   }
   .testimonials-text {
     padding: 0;
