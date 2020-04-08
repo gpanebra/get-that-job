@@ -1,8 +1,16 @@
+.regular-nav {
+  display: none;
+}
+
 .list-menu-header {
   display: none;
 }
 
 @media (min-width: 992px) {
+  .regular-nav {
+    display: block;
+  }
+  
   .list-menu-header {
     display: flex;
   }
