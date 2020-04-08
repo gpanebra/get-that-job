@@ -523,3 +523,8 @@
   color: #000000;
   margin-top: 8px;
 }
+@media only screen and (max-width: 768px) {
+  .faq-container {
+    padding: 0;
+  }
+}
