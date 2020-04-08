@@ -358,7 +358,7 @@
 .country-container-title a {
   text-decoration: none;
   color: #4a5568;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 .arrow-down-select {
@@ -525,6 +525,10 @@
   }
 
   /* job-list-filter */
+
+  .country-container-title a {
+    padding-right: 40px;
+  }
 
   .filters select {
     min-width: 100px;
