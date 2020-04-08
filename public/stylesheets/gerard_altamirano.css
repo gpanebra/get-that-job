@@ -200,6 +200,8 @@ footer {
   flex-flow: column;
   align-self: start;
   list-style: none;
+  justify-self: center;
+  width: 80%;
 }
 
 .footer-title {
@@ -353,9 +355,8 @@ footer {
   .footer-content {
     display: flex;
     flex-flow: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2em;
+    justify-content: space-between ;
+    /* gap: 2em; */
   }
 
   .footer-list {
