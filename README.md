@@ -3,7 +3,9 @@
 ## Members
 
 -Freddy Munive Salas
+
 -Gerard Altamirano Ramírez
+
 -Gustavo Panebra Moina
 
 ## App
