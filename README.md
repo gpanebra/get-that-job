@@ -1,5 +1,11 @@
 # Get That Job
 
+## Members
+
+-Freddy Munive Salas
+-Gerard Altamirano Ramírez
+-Gustavo Panebra Moina
+
 ## App
 
 Get that job is a Sinatra application.
